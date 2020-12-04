@@ -1,0 +1,255 @@
+/*
+.large {
+    position: absolute;
+    left: -9999px;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    list-style-type: none;
+    padding: 10px;
+    position: relative;
+  }
+  li:hover .large {
+    left: 220px;
+    
+  }
+  .large-image {
+    border-radius: 4px;
+     box-shadow: 1px 1px 3px 3px rgba(127, 127, 127, 0.15);
+     width: 300px;
+     
+  }
+  p.product a img {
+    display: none;
+    position: absolute;
+    left: -80px;
+    top: -22px;
+}
+p.product a {
+    display: inline-block;
+    position: relative;
+}
+p.product a img {
+    display: none;
+}
+p.product a:hover img {
+    display: inherit;
+}
+p.product {
+    margin-left: 100px;
+}
+
+ */
+ /*
+ .big2 :hover {
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 400px;
+  height: auto;
+  display: block;
+  z-index: 999;
+}
+*/
+/*
+#thumbwrap {
+	position:relative;
+	margin:75px auto;
+	width:252px; height:252px;
+}
+.thumb img { 
+	border:1px solid #000;
+	margin:3px;
+	float:left;
+}
+.thumb span { 
+	position:absolute;
+	visibility:hidden;
+}
+.thumb:hover, .thumb:hover span { 
+	visibility:visible;
+	top:0; left:250px; 
+	z-index:1;
+}
+
+
+*/
+#thumbwrap {
+ height:252px;
+ margin-left: 3%;
+}
+.thumb {
+	float:left;  
+	position:relative;
+  margin-left:3px;
+  padding: 5px;
+}
+.thumb img { 
+	border:1px solid #000;
+ align-self: start;
+ 
+}
+.thumb:hover {
+	border:0;  
+	z-index:1;
+}
+.thumb span { 
+	position:absolute;
+	visibility:hidden;
+}
+.thumb:hover span { 
+	visibility:visible;
+	top:-25px; left:-25px; 
+}
+#video1{
+  width: 700px;
+  height: 600px;
+}
+#vidm{
+  width: 450px;
+  height: 320px;
+  
+}
+#vidm1{
+  background-color: #00DBDE;
+  background-image: linear-gradient(90deg, #00DBDE 0%, #fc00ff 41%, #00dbde 66%, #FC00FF 100%);
+  
+  
+}
+video{  height: 600px;
+  width: 500px;
+  
+}
+
+p{
+  font-size: larger;
+}
+
+
+#gra{
+background-image: linear-gradient( 109.6deg,  rgba(121,203,202,1) 11.2%, rgba(119,161,211,1) 91.1% );
+ /* background-image: linear-gradient(to right, rgba(9, 145, 126, 0), rgb(189, 8, 128));
+ background-image: radial-gradient(circle, red, yellow, green);*/
+}
+
+
+
+#grad{
+  background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
+}
+
+
+#gal{
+  /* background-color: #08AEEA;*/
+background-image: linear-gradient(0deg, #08AEEA 25%, #2AF598 90%);
+
+}
+
+
+#mv{
+  background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+}
+
+#gra6{
+  background-color: #74EBD5;
+background-image: linear-gradient(90deg, #74EBD5 0%, #FF6B95 100%);
+
+}
+
+#gra3{
+  background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+}
+
+#gra1{
+  background-image: linear-gradient(to top, #FF6B95 0%, #fbc2eb 100%);
+}
+
+#gra2{
+  background-color: #a18cd1;
+background-image: linear-gradient(0deg, #a18cd1 8%, #ffffff 27%, #97D9E1 54%, #ffffff 81%, #a18cd1 100%);
+}
+
+#gra7{
+  background-image: linear-gradient(120deg, #FF6B95 0%, #784BA0 100%);
+}
+
+#gra5{
+  background-image: linear-gradient(to right, #FF6B95 0%, #38f9d7 100%);
+}
+
+#gra4{
+  background-image: linear-gradient(-45deg, #C850C0 0%, #FF6B95 100%);
+}
+
+#graf{
+  background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 20%, #2BD2FF 46%, #2BFF88 77%);
+}
+
+#grab{
+  background-color: #3EECAC;
+  background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 80%);
+  
+}
+
+#gram{
+  background-color: #21D4FD;
+background-image: linear-gradient(19deg, #21D4FD 36%, #8806af 85%);
+
+}
+#gras
+{
+  background-color: #A9C9FF;
+background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+
+}
+#gradd
+{
+  background-color: #74EBD5;
+background-image: linear-gradient(90deg, #74EBD5 26%, #9FACE6 82%);
+
+}
+
+#mv1
+    { margin: 100px ;
+        box-shadow: -5px -5px 30px 9px red, 5px 5px 30px 9px blue;
+    }
+
+    :root {
+        --purple: #7f00ff;
+        --pink: #e100ff;
+      }
+ 
+     .mv2{ background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+     }
+
+    .mv3{ background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #93f0e5 100%);
+    }
+
+    .mv4{
+      background-color: #00DBDE;
+background-image: linear-gradient(90deg, #00DBDE 0%, #fc00ff 41%, #00dbde 66%, #FC00FF 100%);
+
+    }
+
+    .mv5{
+      background-color: #74EBD5;
+background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+
+    }
+
+    .mv6{
+      background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+    }

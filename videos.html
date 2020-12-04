@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+       .nav-link{
+        font-size: 16px;
+        margin: 15px;
+        color: whitesmoke;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      .nav-link:hover{
+        color: rgb(209, 67, 10);
+      
+      }
+      .active .nav-link{
+        color: rgb(173, 12, 101);
+      }
+     
+     /* #more {display: none;}
+      #more3 {display: none;}
+      #more1 {display: none;}
+          #more2 {display: none;} */
+  </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&family=Courgette&family=Lato:ital@1&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="m.css">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>first webpage</title>
+  </head>
+  <body id="grad">
+  <!-- <script>
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+    }
+    function myFunction1() {
+        var dots1 = document.getElementById("dots1");
+        var moreText1 = document.getElementById("more1");
+        var btnText1 = document.getElementById("myBtn1");
+      
+        if (dots1.style.display === "none") {
+          dots1.style.display = "inline";
+          btnText1.innerHTML = "Read more";
+          moreText1.style.display = "none";
+        } else {
+          dots1.style.display = "none";
+          btnText1.innerHTML = "Read less";
+          moreText1.style.display = "inline";
+        }
+    }
+    function myFunction2() {
+        var dots2= document.getElementById("dots2");
+        var moreText2 = document.getElementById("more2");
+        var btnText2 = document.getElementById("myBtn2");
+      
+        if (dots2.style.display === "none") {
+          dots2.style.display = "inline";
+          btnText2.innerHTML = "Read more";
+          moreText2.style.display = "none";
+        } else {
+          dots2.style.display = "none";
+          btnText2.innerHTML = "Read less";
+          moreText2.style.display = "inline";
+        }
+        function myFunction3() {
+        var dots3 = document.getElementById("dots3");
+        var moreText3 = document.getElementById("more3");
+        var btnText3 = document.getElementById("myBtn3");
+      
+        if (dots3.style.display === "none") {
+          dots3.style.display = "inline";
+          btnText3.innerHTML = "Read more";
+          moreText3.style.display = "none";
+        } else {
+          dots3.style.display = "none";
+          btnText3.innerHTML = "Read less";
+          moreText3.style.display = "inline";
+        }
+    }
+       
+    }</script>  -->
+     <header>
+    
+      <nav class="navbar navbar-expand-md bg-dark  fixed-top ">
+           <a class="navbar-brand ml-4 " href="#" ><h1 style="font-family: Pacifico; color: rgb(223, 48, 156);">cri<span style="color: rgb(16, 241, 241);">minal</span></h1></a>
+  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" 
+        aria-expanded="false" aria-label="toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+              <div class="collapse navbar-collapse"></div>
+        <div class="collapse navbar-collapse " id="navbarMenu">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">        
+              <a class="nav-link" href="index.html#home">home</a>
+              </li>
+              <li class="nav-item">      
+               <a class="nav-link" href="index.html#about">about</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="index.html#family">family</a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" href="index.html#version">my version</a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" href="index.html#gallery">gallery</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="videos.html">video</a>
+               </li>
+           
+          </ul>
+          </div>
+    
+      </nav>
+  </header>
+   <br/>
+  <br/>
+      <br/>
+    <br/>
+    <br/>
+    <br/>
+ 
+  <div>
+      <div ><div style="text-align:center"> 
+        
+          <video id="video1" autoplay loop controls> 
+              <source src="start/s3/vi/v (1).mp4 "  type="video/mp4">
+          </video><br/>
+          <button onclick="playPause()">Play/Pause</button> 
+          <br><br>
+         </div></div>
+          <br/><br>
+<div>
+    <div id="item1" style="text-align:center"> 
+     <video id="video2" autoplay loop > 
+                  <source src="start/s3/v/v (2).mp4" type="video/mp4">
+        </video>
+        <button onclick="playVid2()" type="button">Play Video</button>
+        <button onclick="pauseVid2()" type="button">Pause Video</button><br> <br>
+   
+</div></div><br>
+
+<!-- <div id="item1" style="text-align:center"> 
+<video id="video3" autoplay loop controls> 
+            <source src="start/s3/v/v (8).mp4" type="video/mp4">
+        </video>
+        <button onclick="playVid3()" type="button">Play Video</button>
+        <button onclick="pauseVid3()" type="button">Pause Video</button><br> <br>
+    </div><br> -->
+
+        <div id="item1" style="text-align:center"> 
+              <video id="video4" autoplay loop > 
+            <source src="start/s3/v/v (3).mp4" type="video/mp4">
+        </video>
+        <button onclick="playVid4()" type="button">Play Video</button>
+        <button onclick="pauseVid4()" type="button">Pause Video</button><br> <br>
+      </div><br>
+
+        <div id="item1" style="text-align:center"> 
+                  <video id="video5" autoplay loop > 
+            <source src="start/s3/v/v (6).mp4" type="video/mp4">
+        </video>
+        <button onclick="playVid5()" type="button">Play Video</button>
+        <button onclick="pauseVid5()" type="button">Pause Video</button><br> <br>
+      </div><br>
+
+      <div>
+        <div id="item1" style="text-align:center"> 
+         <video id="video6" autoplay loop > 
+                      <source src="start/s3/v/v (5).mp4" type="video/mp4">
+            </video>
+            <button onclick="playVid6()" type="button">Play Video</button>
+            <button onclick="pauseVid6()" type="button">Pause Video</button><br> <br>
+       
+    </div></div><br>
+    
+        <div id="item1" style="text-align:center"> 
+         <video id="video7" autoplay loop controls> 
+            <source src="start/s3/vi/v (9).mp4" type="video/mp4">
+        </video>
+        <button onclick="playVid7()" type="button">Play Video</button>
+        <button onclick="pauseVid7()" type="button">Pause Video</button><br> <br>
+        </div><br>
+
+        <div id="item1" style="text-align:center"> 
+         <video id="video8" autoplay loop > 
+            <source src="start/s3/v/v (7).mp4" type="video/mp4"></video>
+                <button style="margin-left: 15%;" onclick="playVid8()" type="button">Play Video</button>
+                <button onclick="pauseVid8()" type="button">Pause Video</button><br><br> 
+                 
+        </div><br>
+
+        <div id="item1" style="text-align:center"> 
+          <video id="video9" autoplay loop > 
+             <source src="start/s3/vi/v (10).mp4" type="video/mp4"></video>
+                 <button style="margin-left: 15%;" onclick="playVid9()" type="button">Play Video</button>
+                 <button onclick="pauseVid9()" type="button">Pause Video</button><br><br> 
+                  
+         </div><br>
+
+         <div id="item1" style="text-align:center"> 
+         <video id="video10" autoplay loop > 
+            <source src="start/s3/vi/v (11).mp4" type="video/mp4"></video>
+                <button style="margin-left: 15%;" onclick="playVid10()" type="button">Play Video</button>
+                <button onclick="pauseVid10()" type="button">Pause Video</button><br><br> 
+                 
+        </div><br>
+ 
+
+      </div>
+  </div>
+    <script> 
+       var myVideo = document.getElementById("video1"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+
+        } 
+    
+
+      /*  var myVideo = document.getElementById("video2"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        }
+
+        var myVideo = document.getElementById("video3"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        }
+        
+        var myVideo = document.getElementById("video4"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        }
+        var myVideo = document.getElementById("video5"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        }
+
+        var myVideo = document.getElementById("video6"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        }
+
+        var myVideo = document.getElementById("video7"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        } 
+      
+      
+      
+      
+      var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+}  */
+
+var vid2 = document.getElementById("video2"); 
+
+function playVid2() { 
+  vid2.play(); 
+} 
+
+function pauseVid2() { 
+  vid2.pause(); 
+} 
+
+   
+/* var vid3 = document.getElementById("video3"); 
+
+function playVid3() { 
+  vid3.play(); 
+} 
+
+function pauseVid3() { 
+  vid3.pause(); 
+}  */
+
+var vid4 = document.getElementById("video4"); 
+
+function playVid4() { 
+  vid4.play(); 
+} 
+
+function pauseVid4() { 
+  vid4.pause(); 
+} 
+
+var vid5 = document.getElementById("video5"); 
+
+function playVid5() { 
+  vid5.play(); 
+} 
+
+function pauseVid5() { 
+  vid5.pause(); 
+} 
+
+var vid8 = document.getElementById("video8"); 
+
+function playVid8() { 
+  vid8.play(); 
+} 
+
+function pauseVid8() { 
+  vid8.pause(); 
+} 
+
+var vid6 = document.getElementById("video6"); 
+
+function playVid6() { 
+  vid6.play(); 
+} 
+
+function pauseVid6() { 
+  vid6.pause(); 
+} 
+
+var vid7 = document.getElementById("video7"); 
+
+function playVid7() { 
+  vid7.play(); 
+} 
+
+function pauseVid7() { 
+  vid7.pause(); 
+} 
+
+var vid9 = document.getElementById("video9"); 
+
+function playVid9() { 
+  vid9.play(); 
+} 
+
+function pauseVid9() { 
+  vid9.pause(); 
+} 
+
+var vid10 = document.getElementById("video10"); 
+
+function playVid10() { 
+  vid10.play(); 
+} 
+
+function pauseVid10() { 
+  vid10.pause(); 
+} 
+
+
+        </script> 
+        
+</body>
+</html>        

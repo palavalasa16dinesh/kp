@@ -1,0 +1,320 @@
+body{
+    font-family: 'pacifico';
+  
+}
+li{
+    padding-bottom: 2%;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+.container{  padding-top: 20px;
+  padding-bottom: 20px;}
+  /*
+body{
+  background-color: #111845;
+} */
+
+.background-img{
+  background-image: url("https://3.bp.blogspot.com/-piZWCW2uUbg/W2fPXxkWZgI/AAAAAAAAOu0/eydmMjTIqcwLMHEEr2H7imqoRTxMw4o9QCLcBGAs/s1600/among_trees_night_dribbble.png");
+height: 700px;
+  width: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:20px;
+  border: 1px solid #2a3cad;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px #2a3cad;
+  position: relative;
+  margin-left: 0%;
+}
+
+.content h2{ font-size:19px;}
+
+.box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 620px;
+  background: #111845a6;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(23, 32, 90);
+  border: 2px solid #2a3cad;
+  color: white;
+  padding: 20px;
+}
+
+.box:before{
+  content: '';
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background: rgba(255,255,255,0.1);
+  transition:0.5s;
+  pointer-events: none;
+}
+
+.box:hover:before{
+  left:-50%;
+  transform: skewX(-5deg);
+}
+
+
+.box .content{
+  position:absolute;
+  top:15px;
+  left:15px;
+  right:15px;
+  bottom:15px;
+  border:1px solid #f0a591;
+  padding:20px;
+  text-align:center;
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+  
+}
+
+.box span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  
+}
+
+.box span:nth-child(1)
+{
+  transform:rotate(0deg);
+}
+
+.box span:nth-child(2)
+{
+  transform:rotate(90deg);
+}
+
+.box span:nth-child(3)
+{
+  transform:rotate(180deg);
+}
+
+.box span:nth-child(4)
+{
+  transform:rotate(270deg);
+}
+
+.box span:before
+{
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 2px;
+  background: #50dfdb;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+    
+  }
+  
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+    
+  }
+  
+  
+} 
+
+
+    .bio {
+        position: relative;
+        margin: 100px;
+        width: 500px;
+        
+        
+    }
+    
+    .bio:before, .bio:after {
+        content: '';
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+            #0000ff, #00ff00,#ffff00, #ff0000);
+        background-size: 400%;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: -1;
+        animation: steam 20s linear infinite;
+    }
+
+    
+    .bio:after {
+        filter: blur(50px);
+    }
+    
+
+ .family
+    { margin: 100px ;
+        box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+    }
+
+    :root {
+        --purple: #7f00ff;
+        --pink: #e100ff;
+      }
+    button {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        position: relative;
+        outline: none;
+        border: none;
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0.75em 1.75em;
+        border-radius: 50px;
+        display: inline-block;
+        color: #fff;
+        
+        /* Our gradient */
+        background: -webkit-gradient(linear, left top, right top, from(var(--purple)), to(var(--pink)));
+        background: linear-gradient(to right, var(--purple), var(--pink));
+      }
+      
+      
+      button::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        bottom: -10px;
+        left: 5%;
+        height: 110%;
+        width: 90%;
+        opacity: 0.8;
+        border-radius: 50px;
+        margin-bottom: 2%;
+        
+        /* Declaring our shadow color inherit from the parent (button) */
+        background: inherit;
+        
+        /* Blurring the element for shadow effect */
+        -webkit-filter: blur(6px);
+        -moz-filter: blur(6px);
+        -o-filter: blur(6px);
+        -ms-filter: blur(6px);
+        filter: blur(6px);
+        
+        /* Transition for the magic */
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+      }
+      
+      
+      button:hover::after {
+        /* Changing blur effect */
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+      
+        /* And change the style properties */
+        width: 100%;
+        bottom: -5px;
+        left: 0;
+      }
+      
+      
+      button:hover:active::after {
+        -webkit-filter: blur(10px);
+        -moz-filter: blur(10px);
+        -o-filter: blur(10px);
+        -ms-filter: blur(10px);
+        filter: blur(10px);
+      }
+ .gallery{
+     
+     padding: 0%;
+ }     
+        .test {
+                  
+            display: inline-block;
+            
+            border-radius: 20px;
+            border: solid 10px transparent;
+          }
+          
+          #test1 {
+              background: 
+                  radial-gradient(circle at left top, rgb(209, 17, 129) 140px, transparent 150px),
+                radial-gradient(circle at right top, rgb(20, 93, 189) 140px, transparent 150px),
+                cyan;
+              background-clip: content-box, border-box, border-box, border-box;
+            background-origin: content-box, border-box, border-box, border-box;
+          }
+          
+          #test2 {
+              background: 
+                  linear-gradient(to bottom right, rgb(209, 17, 129) 120px, transparent 150px),
+                linear-gradient(to bottom left, rgb(11, 84, 180) 120px, transparent 150px),
+                cyan;
+              background-clip: content-box, border-box, border-box, border-box;
+            background-origin: content-box, border-box, border-box, border-box;
+          }
+          #item{
+            width:200px;
+            text-align:center;
+            display:block;
+            background-color: transparent;
+            border: 1px solid transparent;
+            margin-right: 2%;
+            margin-bottom: 1px;
+            float:left;
+            margin-left: 2%;
+          }
+          #item1{
+            width:350px;
+            text-align:center;
+            display:block;
+            background-color: transparent;
+            border: 1px solid transparent;
+            margin-right: 15%;
+            margin-bottom: 1px;
+            float:left;
+            margin-left: 10%;
+            
+          }
+          
+    
+          
+    
+          

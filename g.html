@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+       .nav-link{
+        font-size: 16px;
+        margin: 15px;
+        color: whitesmoke;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      .nav-link:hover{
+        color: rgb(209, 67, 10);
+      
+      }
+      .active .nav-link{
+        color: rgb(173, 12, 101);
+      }
+
+      #about1, #family1, #friends1{
+     font-family: 'Cormorant Upright' ;
+   }  
+  
+      .bio1 {
+        position: fixed;
+        margin: 100px 0px;
+        width: 500px;
+        
+        
+    }
+    .mySlides{
+        display: none;
+      }
+ 
+    
+    .bio1:before, .bio1:after {
+        content: '';
+      position: absolute ;
+        left: -2px;
+        top: -2px;
+        background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+            #0000ff, #00ff00,#ffff00, #ff0000);
+        background-size: 400%;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: -1;
+        animation: steam 20s linear infinite;
+    }
+
+    
+    .bio1:after {
+        filter: blur(50px);
+    }
+  
+     
+      #more {display: none;}
+      #more1 {display: none;}
+        #more2 {display: none;}
+          #family1, #about1, #friends1{
+          box-shadow: 0 0 10px 5px black, 40px -30px 10px lime, 40px 30px 50px red, -40px 30px 10px yellow, -40px -30px 50px blue;
+            margin: 50px 0px 50px 50px; 
+                  
+        }
+  </style>
+   <link rel="stylesheet" type="text/css" href="m.css ">
+   <link rel="stylesheet" type="text/css" href="popup.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&family=Courgette&family=Lato:ital@1&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>first webpage</title>
+  </head>
+   
+  <body id="gra" >
+    <script>
+      function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "read more";
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+          }
+      }
+      function myFunction1() {
+          var dots1 = document.getElementById("dots1");
+          var moreText1 = document.getElementById("more1");
+          var btnText1 = document.getElementById("myBtn1");
+        
+          if (dots1.style.display === "none") {
+            dots1.style.display = "inline";
+            btnText1.innerHTML = "read more";
+            moreText1.style.display = "none";
+          } else {
+            dots1.style.display = "none";
+            btnText1.innerHTML = "Read less";
+            moreText1.style.display = "inline";
+          }
+      }
+      function myFunction2() {
+          var dots2= document.getElementById("dots2");
+          var moreText2 = document.getElementById("more2");
+          var btnText2 = document.getElementById("myBtn2");
+        
+          if (dots2.style.display === "none") {
+            dots2.style.display = "inline";
+            btnText2.innerHTML = "read more";
+            moreText2.style.display = "none";
+          } else {
+            dots2.style.display = "none";
+            btnText2.innerHTML = "read less";
+            moreText2.style.display = "inline";
+          }
+      }</script>
+       <header>
+      
+        <nav class="navbar navbar-expand-md bg-primary  fixed-top ">
+             <a class="navbar-brand ml-4 " href="#" ><h1 style="font-family: Pacifico; color: rgb(114, 12, 134);">cri<span style="color: rgb(16, 241, 241);">minal</span></h1></a>
+    
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" 
+          aria-expanded="false" aria-label="toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+                <div class="collapse navbar-collapse"></div>
+          <div class="collapse navbar-collapse " id="navbarMenu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">        
+                <a class="nav-link" href="index.html#home">home</a>
+                </li>
+                <li class="nav-item">      
+                 <a class="nav-link" href="index.html#about">about</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="index.html#family">family</a>
+               </li>
+               <li class="nav-item">
+                <a class="nav-link" href="index.html#version">my version</a>
+               </li>
+               <li class="nav-item">
+                <a class="nav-link" href="index.html#gallery">gallery</a>
+               </li>
+               <li class="nav-item">
+                <a class="nav-link" href="videos.html">video</a>
+               </li>
+           
+            </ul>
+            </div>
+      
+        </nav>
+    </header>
+    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+        <br/><div id="gram">
+        <div id="grad">
+          <div class="w3-content w3-section"  style="padding-left: 15%;">
+          <img class="mySlides w3-animate-top" src="start\s3\m\d (85).jpg " width=500px class="mx-auto d-block">
+                <img class="mySlides w3-animate-left" src="start\s3\me\m1 (19).jpeg  " width=500px class="mx-auto d-block">
+                <img class="mySlides w3-animate-bottom" src="start\s3\me\m1 (18).jpeg " width=500px class="mx-auto d-block">
+                <img class="mySlides w3-animate-right" src="start\s3\me\m1 (16).jpeg" width=500px class="mx-auto d-block">
+                <img class="mySlides w3-animate-fading" src="start\s3\m\d (75).jpg " width=500px class="mx-auto d-block">
+                <img class="mySlides w3-animate-left" src="start\s3\me\m1 (17).jpeg" width=500px class="mx-auto d-block">
+                <img class="mySlides w3-animate-bottom" src="start\s3\me\m1 (12).jpeg  " width=500px class="mx-auto d-block">
+                <img class="mySlides w3-animate-right" src="start\s3\m\d (148).png" width=500px class="mx-auto d-block">
+               </div></div>
+          <script>
+            var myIndex= 0;
+            carousel();
+          
+            function carousel(){
+              var i;
+              var x= document.getElementsByClassName("mySlides");
+              for(i=0;i<x.length;i++)
+              {
+                x[i].style.display="none";
+              }
+              myIndex++;
+              if (myIndex > x.length)
+              {
+                myIndex = 1
+              }
+              x[myIndex-1].style.display="block";
+              setTimeout(carousel,2500);
+            }
+          </script>
+          
+      <br/>
+      <br/>
+      <br/>
+      <div class="flex-container  " id="about2" style="flex-direction: row ; display: flex;" >
+        <div class="row ">
+        <div class="col-xs-12 col-sm-6 col-md-8" style="flex-direction: column; display: flex;" >
+            <div   id="about1" style="text-align:center; ">
+              <div id="gra3" >
+                <h3 >BIO DATA</h3>
+                <img src="./start/s3/m/d (110).jpg" width="250px" class="mx-auto d-block">
+                <p ><ul  style="list-style-type: none;font-family: cursive; "><li>  <h2> <em>TALLAPRAGADA HANUMA SRI SUBHADRA KRISHNA PRIYA</em> </h2>      </li>
+                <h5> <li>dob: 13/09/2001 </li>
+                  <li>
+                    phone: 7981759738
+                  </li>
+                  <li>
+                    aadhar no: 6799 8261 1755
+                  </li>
+                <p style="font-size:80%;font-family: cursive;">    school first<br/>
+                    eamcet rank : 1670<br/>
+                          religion: hindu<br/>
+                          blood group: AB+ve<br/>
+                               harry potter fan<br/>
+                              dictionary swallowed girl<br/>
+                                                </p>
+               <span id="dots">  </span><span id="more">
+                 <li>
+                  
+                 </li>
+                 <li>
+
+                 </li>
+
+                  <li></li>
+                  <div id="thumbwrap">
+                    <a class="thumb" href="#"><img src="./start/s3/m/d (92).jpg" width="225px" height="250px" alt=""><span><img src="./start/s3/m/d (92).jpg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/m/d (118).jpg" width="225px" height="250px" alt=""><span><img src="./start/s3/m/d (118).jpg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/m/d (53).jpg" width="225px" height="250px" alt=""><span><img src="./start/s3/m/d (53).jpg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/m/d (54).jpg" width="225px" height="250px" alt=""><span><img src="./start/s3/m/d (54).jpg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/m/d (48).jpg" width="225px" height="250px" alt=""><span><img src="./start/s3/m/d (48).jpg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/me/m (4).jpg" width="225px" height="250px" alt=""><span><img src="./start/s3/me/m (4).jpg" width=300px alt=""></span></a>
+                </div></span> </h5> </ul>     </p><br/>
+                         <button onclick="myFunction()" id="myBtn" style="margin-bottom: 2%;" >read more</button>
+                               </div></div>
+    
+
+        
+            <div id="family1"  style="text-align:center">
+               
+                <h3 >FAMILY</h3>
+                <div style="display: flex;" id="gra1">
+                  <div id="item" style="margin-left:12% ;">
+                    <img src="./start/s3/me/fm1.jpg"  height="250px" width="200px " alt="">
+                                  <p>
+                   DAD: VISWESWARA RAJ
+                    </p>
+                  </div>
+                  <div id="item">
+                    <img src="./start/s3/me/fm3.jpg" height="250px">
+                    <p>(me)</p>
+                  </div>
+                  <div></div>
+              
+                    <div id="item" style="margin-left: 6%;" >
+                      <img src="./start/s3/me/fm2.jpeg "  height="250px" alt="">
+                                    <p>
+                     MOM: D L S MANIKYAM
+                      </p>
+                    </div>
+                  
+                      </div>
+                     
+                <p id="gra2" style="font-family:Helvetica, sans-serif   ;"> <span id="dots1">  </span><span id="more1" > 
+                      dad phone:9542787779<br/>
+                      mom phone:9963972715<br/>
+                      <br/>
+                      daddy is my inspiration<br/>
+                      andaru anukuntaru nen mummy tho baaga close ani<br/>
+                      nen daddy tho kuda equally close<br/>
+                       daddy qualities ae naalo ekkuva<br/>
+                     mummy meedane ekkuva arusta <br/>
+                     nen chupinchey prema alane vuntadi<br/>
+                     prathi visayam intlo share cheskunta<br/>
+                      mummy vantallu too much tastey..
+                       <br/>mummy homage chaalaa baguntadi<br/> intiki veltey potta nindipoye varaku pedtaru<br/>
+                       intlo maa frnds food tinali ante <br/>mundu roju em tinakunda maa intiki ravali<br/>
+                       eppudu mummy chethi vanta tintamaa ani.<br/>
+                      mummy ever green asalu <br/> naa chinapati nundi chustuna eppatiki alane vunnaru<br/>
+                      naaku doubt nen old avta kaani mummy matram eppatiki avvaru<br/>
+                      ippatike mamalani sisters antunaru..<br/>
+                      nkoni years lo nannu aunty ani na child ani mummy ni antaremo<br/>
+                     mummy poorti peru maa frnds evariki sariga teledu<br/>
+                     "veediki tappa",, andaru dhana lakshmi aney antaru <br/> 
+                     veedu matram MANI antadu.<br/>
+              
+              
+                    </span>
+                 </p>
+                <button onclick="myFunction1()" id="myBtn1" style="margin-bottom: 2%;">Read more</button>
+                                </div>
+        </div>
+           
+            <div class=" flex-container text-center col-md-4 col-sm-12 " style="flex-direction: column; display: flex; padding-left:5%; " >
+              <div class="card bio1" id="mv" >
+                 <h1>My version </h1>
+                   <a href="version.html"><img src="./start/me.png" width="280px" style="margin: 4%;">
+                 <button>click</button></a>
+                                   
+                  </div>
+                  <br/>
+                  <br/>
+                 
+                </div>
+                     </div>
+                </div>
+            <div   class="col-md-10 col-sm-8 col-xs-12" id="friends1" >
+              <div style="text-align: center;" >
+                <h3 style="text-align:center">FRIENDS</h3>
+                <div style="display: flex;" >
+                  <div id="item" >
+                    <img src="./start/s3/me/fm (7).jpg  "  height="300px" alt="">
+                                  <p>
+                   JAHNAVI
+                    </p>
+                  </div>
+                 <!-- <div id="thumbwrap">
+                    <a class="thumb" href="#"><img src="./start/s3/friends/t (2).jpg " width="100px" height="100px" alt=""><span><img src="./start/s3/friends/t (2).jpg" width=300px alt=""></span></a>
+                   </div>  -->   
+                 <div id="item">
+                  <img src="./start/s3/me/fm (1).jpeg "  height="300px" alt="" >
+            <!--      <div id="thumbwrap">
+                    <a class="thumb" href="#"><img src="./start/s3/friends/n (1).jpg " width="225px" height="300px" alt=""><span><img src="./start/s3/friends/n (1).jpg" width=300px alt=""></span></a>
+            -->
+                  <p>
+                 CHANDANA
+                  </p>
+                </div>
+                <div id="item" style="margin-left: 9%;">
+                  <img src="./start/s3/me/fm (8).jpg "  height="300px">
+               <p>
+                 AMRUTHA
+                  </p>
+                </div>
+                
+              
+        
+                <div id="item">
+                  <img src="./start/s3/me/fm (10).jpeg"   height="300px" alt="">
+               <!--   <div id="thumbwrap">
+                    <a class="thumb" href="#"><img src="./start/s3/friends/p (4).jpg" width="225px" height="300px" alt=""><span><img src="./start/s3/friends/p (4).jpg" width=300px alt=""></span></a>
+               -->
+                  <p>
+                 NAZEERA
+                  </p>
+                </div>
+                </div>
+                <span id="dots2"></span>
+                  
+                  <span id="more2">
+                    
+                        <div id="thumbwrap" >
+                          <div id="gra4">
+                      <a class="thumb" href="#"><img src="./start/s3/me/fm (2).jpeg " width="220px" height="300px" alt=""><span><img src="./start/s3/me/fm (2).jpeg" width=300px alt=""></span></a>
+                      <a class="thumb" href="#"><img src="./start/s3/me/fm (3).jpeg " width="220px" height="300px" alt=""><span><img src="./start/s3/me/fm (3).jpeg" width=300px alt=""></span></a>
+                      <a class="thumb" href="#"><img src="./start/s3/me/fm (4).jpeg " width="220px" height="300px" alt=""><span><img src="./start/s3/me/fm (4).jpeg" width=300px alt=""></span></a>
+                      <a class="thumb" href="#"><img src="./start/s3/me/fm (5).jpeg " width="220px" height="300px" alt=""><span><img src="./start/s3/me/fm (5).jpeg" width=300px alt=""></span></a>
+                      <a class="thumb" href="#"><img src="./start/s3/me/fm (6).jpeg " width="220px" height="300px" alt=""><span><img src="./start/s3/me/fm (6).jpeg" width=300px alt=""></span></a>
+                   </div>
+                    </div>
+                                   <div id="thumbwrap" >
+                                    <div id="gra5">
+                                <a class="thumb" href="#"><img src="./start/s3/me/m1 (4).jpeg " width="220px" height="300px" alt=""><span><img src="./start/s3/me/m1 (4).jpeg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/me/m1 (5).jpeg " width="220px" height="300px" alt=""><span><img src="./start/s3/me/m1 (5).jpeg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/me/m1 (6).jpeg " width="220px" height="300px" alt=""><span><img src="./start/s3/me/m1 (6).jpeg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/me/m1 (7).jpeg " width="220px" height="300px" alt=""><span><img src="./start/s3/me/m1 (7).jpeg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/me/m1 (8).jpeg " width="220px" height="300px" alt=""><span><img src="./start/s3/me/m1 (8).jpeg" width=300px alt=""></span></a>
+                  </div>  
+            </div>
+            <div id="gra6">
+                         <div id="thumbwrap">
+                    <a class="thumb" href="#"><img src="./start/s3/me/m (12).jpg" width="220px" height="300px" alt=""><span><img src="./start/s3/me/m (12).jpg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/me/m (13).jpg" width="220px" height="300px" alt=""><span><img src="./start/s3/me/m (13).jpg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/m/d (3).jpeg" width="220px" height="300px" alt=""><span><img src="./start/s3/m/d (3).jpeg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/m/d (4).jpeg " width="220px" height="300px" alt=""><span><img src="./start/s3/m/d (4).jpeg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/m/d (27).jpg" width="220px" height="300px" alt=""><span><img src="./start/s3/m/d (27).jpg" width=300px alt=""></span></a>
+              </div>
+            </div>
+            <div id="gra7">
+                                 <div id="thumbwrap" >
+                    <a class="thumb" href="#"><img src="./start/s3/m/d (76).jpg " width="220px" height="300px" alt=""><span><img src="./start/s3/m/d (76).jpg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/m/d (88).jpg " width="220px" height="300px" alt=""><span><img src="./start/s3/m/d (88).jpg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/me/m (24).jpg " width="220px" height="300px" alt=""><span><img src="./start/s3/me/m (24).jpg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/me/m (21).jpg " width="220px" height="300px" alt=""><span><img src="./start/s3/me/m (21).jpg" width=300px alt=""></span></a>
+                    <a class="thumb" href="#"><img src="./start/s3/me/m (31).jpg " width="220px" height="300px" alt=""><span><img src="./start/s3/me/m (31).jpg" width=300px alt=""></span></a>
+            </div>
+          </div>
+
+                
+                  
+                </span>
+              
+               <button onclick="myFunction2()" id="myBtn2" style="margin-bottom: 2%;">Read more</button>
+                               </div>
+            </div>
+        
+        
+  
+    <br/>
+    <br/>
+       
+<!--  
+<div class="flex-container " style=" flex-direction: row; display: flex; padding-left: 5%; padding-right: 5%;">
+    <div class="row">
+               
+        <div class="flex-container col-md-8 col-sm-12" style="flex-direction: column; padding-right: 5%; ">
+            <div    style=" border-bottom-style: outset; border-right-style:solid  ;border-color:grey; margin-bottom: 4%;" >
+              <p style="color: black;">1.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, perferendis eligendi molestias minus eveniet doloremque perspiciatis! Delectus ad id necessitatibus aliquam, architecto eius rem officiis, laboriosam cum aliquid quae commodi!</p>  
+                     </div>
+                     <br/>
+                     <br/>
+            <div style=" border-bottom-style: outset; border-right-style:solid  ;border-color:grey;">
+                <p style="color: blueviolet;">3.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, facilis. Rerum quos eos ratione! Dolorem modi similique quidem ratione sunt aut eius nihil laborum ullam deleniti, maxime inventore hic officiis!</p>
+            </div>
+        </div>
+        <br/>
+        <br/>   
+        <div class="flex-container col-md-4 col-sm-12" style="flex-direction: column;">
+           <div   style=" border-bottom-style: outset; border-right-style:solid  ;border-color:grey; margin-bottom: 4%; ">
+               <p style="color: crimson; ">2.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error voluptates incidunt nam asperiores officiis esse tempora nemo soluta itaque sapiente earum neque sint impedit, natus iste illum, exercitationem tenetur? Rem?</p>
+           </div >
+           <br/>
+           <br/>
+
+           <div style=" border-bottom-style: outset; border-right-style:solid  ;border-color:grey;">4. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium facere quae mollitia fugiat consequuntur deleniti nostrum vitae cum saepe! Ipsa tempore ad quos, a provident velit inventore ratione dolorem! Quos?</div>
+        
+    </div>
+    </div>
+
+</div>  
+
+
+
+
+
+
+
+<div class="container" style="background-color: lightseagreen ; display: flex; background-image: url(ip.jpg) ; background-repeat:no-repeat; background-position: right ;    ">
+    <div style="text-align: left;">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><p> Fugit iste, iure nisi reiciendis eligendi consequuntur.</p> <p>Eligendi aliquid veritatis sit voluptate quo voluptates doloremque explicabo consectetur quae.</p><p> Incidunt, vel! Voluptatum, cupiditate?</p>
+    </div>
+
+    </div>
+           -->
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
